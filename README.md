@@ -1,2 +1,4 @@
-# python-tips
-A place to put some Python tips to learn more and become a better developer
+# Python tips
+
+A low-stress place to put some Python tips to learn and become better
+developers, and to be able to quickly share them.
