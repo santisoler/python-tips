@@ -3,8 +3,10 @@
 > **TL;DR:**
 > Try to avoid using mutable objects as class attributes.
 
-A misconception that might happen is considering class attributes as attributes
-of the instances. This becomes clear when the class attributes are mutable.
+A common misconception is to consider _class attributes_ (attributes defined for the class) as _instance attributes_.
+Class attributes belong to the class itself, therefore they are shared by all instances of that class.
+This is useful when we know that all instances of a given class need the same value for a given attribute.
+But it could have undesired behaviours, specially when using _mutable_ objects as values of those attributes.
 
 For example, let's define a class with a class attribute `x`, and an _instance_
 attribute `y`:
